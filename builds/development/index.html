@@ -1,13 +1,21 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>day #</title>
-  <link rel="stylesheet" href="css/myStyle.css">
-  <link rel="stylesheet" href="css/anotherstyle.css">
+    <meta charset="UTF-8">
+    <title>day #</title>
+    <link rel="stylesheet" href="css/myStyle.css">
+    <link rel="stylesheet" href="css/anotherstyle.css">
 </head>
-<body>
+<body ng-app="myApp">
 
+<div ng-controller="myController as myCtrl">
+    <p>{{'hongbo' | capitalize}}</p>
+</div>
+
+
+<script src="js/lib/angular/angular.min.js"></script>
+<script src="js/app-filters.js"></script>
+<script src="js/app.js"></script>
 <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
 </body>
 </html>
